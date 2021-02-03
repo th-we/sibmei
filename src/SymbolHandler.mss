@@ -30,8 +30,14 @@ function InitSymbolHandlers () {
             '214', 'HandleModifier',                    //marc above
             '217', 'HandleModifier',                    //upbow above
             '218', 'HandleModifier',                    //dnbow above
+            '220', 'HandleControlEvent',                //long pause above
+            '221', 'HandleControlEvent',                //fermata above
+            '222', 'HandleControlEvent',                //short pause above
             '233', 'HandleModifier',                    //upbow below
             '234', 'HandleModifier',                    //dnbow below
+            '236', 'HandleControlEvent',                //long pause below
+            '237', 'HandleControlEvent',                //fermata below
+            '238', 'HandleControlEvent',                //short pause below
             '243', 'HandleModifier',                    //snap
             '480', 'HandleModifier',                    //scoop
             '481', 'HandleModifier',                    //fall
@@ -72,8 +78,14 @@ function InitSymbolMap () {
         '214', CreateSparseArray('Artic', CreateDictionary('artic','marc', 'place','above')),   //marc above
         '217', CreateSparseArray('Artic', CreateDictionary('artic','upbow', 'place','above')),  //upbow above
         '218', CreateSparseArray('Artic', CreateDictionary('artic','dnbow', 'place','above')),  //dnbow above
+        '220', CreateSparseArray('Fermata', CreateDictionary('form','norm', 'shape','square')), //long pause above
+        '221', CreateSparseArray('Fermata', CreateDictionary('form','norm', 'shape','curved')), //fermata above
+        '222', CreateSparseArray('Fermata', CreateDictionary('form','norm', 'shape','angular')),//short pause above
         '233', CreateSparseArray('Artic', CreateDictionary('artic','upbow', 'place','below')),  //upbow below
         '234', CreateSparseArray('Artic', CreateDictionary('artic','dnbow', 'place','below')),  //dnbow below
+        '236', CreateSparseArray('Fermata', CreateDictionary('form','inv', 'shape','square')),  //long pause below
+        '237', CreateSparseArray('Fermata', CreateDictionary('form','inv', 'shape','curved')),  //fermata below
+        '238', CreateSparseArray('Fermata', CreateDictionary('form','inv', 'shape','angular')), //short pause below
         '243', CreateSparseArray('Artic', CreateDictionary('artic','snap')),                    //snap
         '480', CreateSparseArray('Artic', CreateDictionary('artic','scoop')),                   //scoop
         '481', CreateSparseArray('Artic', CreateDictionary('artic','fall')),                    //fall
